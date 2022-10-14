@@ -20,4 +20,10 @@ class TestMain(unittest.TestCase):
         res=main.add5(n1,n2)
         self.assertEqual(res,"Enter a no")
 
+    def test4(self):
+        n1= ""
+        n2= ""
+        res=main.add5(n1,n2)
+        self.assertIsInstance(res,(AssertionError, ValueError))
+
 unittest.main()
